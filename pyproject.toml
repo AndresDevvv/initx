@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "initx"
+version = "0.1.0"
+description = "A global CLI to bootstrap new app directories."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "AndresDevvv" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/AndresDevvv/initx"
+Issues = "https://github.com/AndresDevvv/initx/issues"
+
+[project.scripts]
+initx = "init_cli.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
